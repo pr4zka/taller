@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  width: 100%;
+}
+
+/* header - navbar */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: rgb(247, 242, 242);
+  box-shadow: 1px 1px 1px;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px;
+  transition: 300ms all;
+}
+.navbar li:hover{
+    transform: scale(1.1);
+}
+
+/* login */
+#login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -95px;
+}
+#login-container h1{
+    padding-bottom: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.input{
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.btn-login{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+
+}
+.btn-login:hover{
+    background-color: rgb(44, 43, 43);
+    cursor: pointer;
+}
