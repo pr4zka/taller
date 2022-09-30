@@ -9,8 +9,8 @@ export const Register = () => {
             <Formik initialValues={null} enableReinitialize={true}>
                 <Form className='form'>
                     <input className='input' type="email" placeholder='Email' />
-                    <input className='input' type="password" placeholder='Password' />
-                    <button className='btn-login'>Register</button>
+                    <input className='input btn-r' type="password" placeholder='Contraseña' />
+                    <button className='btn-login'>Registrar</button>
                 </Form>
             </Formik>
         </div>
