@@ -1,49 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
 }
 body {
   width: 100%;
 }
-
-/* header - navbar */
-#header {
+.App{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 80px;
-  background: rgb(247, 242, 242);
-  box-shadow: 1px 1px 1px;
-  z-index: 999;
-  position: sticky;
-  top: 0;
-  left: 0;
-}
-.navbar {
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.navbar li {
+
+/* header - navbar */
+
+#header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 50px 70px;
+  background: #fff;
+}
+#header h1{
+  font-weight: 700;
+  color: #0073b1;
+}
+
+/* bienvenida */
+#bienvenida{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 352px;
+  height: 288px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+  padding: 24px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+#bienvenida h2{
+  padding-top: 30px;
+}
+#bienvenida h4{
+  padding-top: 60px;
+}
+.btn-select{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding-top: 20px;
+}
+.btn-select li{
   list-style: none;
-  padding: 0 20px;
-  position: relative;
-}
-.navbar li a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-  background: rgb(0, 0, 0);
-  border-radius: 5px;
-  padding: 10px;
-  transition: 300ms all;
-}
-.navbar li:hover{
-    transform: scale(1.1);
+  padding: 10px 30px;
+  font-weight: 700;
+  border-radius: 40px;
+  text-align: center;
+  background: #0073b1;
 }
 
 /* login */
@@ -52,8 +69,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin-top: -95px;
+    width: 352px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+    padding: 24px;
+    border-radius: 8px;
 }
 #login-container h1{
     padding-bottom: 10px 30px;
@@ -63,21 +82,33 @@ body {
 .form{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding-top: 15px;
+    width: 100%;
 }
 .input{
+    width: 100%;
     margin-bottom: 15px;
     padding: 15px;
     border-radius: 5px;
+    border: 1px solid #666666;
+}
+.link{
+  text-decoration: none;
+  padding: 10px;
 }
 .btn-login{
-    padding: 10px;
-    background-color: black;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background-color: #0073b1;
     color: white;
-    border-radius: 5px;
+    border-radius: 50px;
 
 }
 .btn-login:hover{
-    background-color: rgb(44, 43, 43);
+    background-color: #004182;
     cursor: pointer;
+}
+.btn-r{
+  margin-bottom: 55px;
 }
